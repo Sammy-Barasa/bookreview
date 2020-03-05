@@ -34,27 +34,17 @@
 <section class="section" id="books">
   <div class="row">
     <div class="col-md-8">
-  <table class="table table-dark">
-    <thead>
-      <tr>
-        
-        <th scope="col">ISBN</th>
-        <th scope="col">Title</th>
-        <th scope="col">Author</th>
-        <th scope="col">Year</th>
-      </th>
-      <tbody>
+  <ul>
+      <li>
         {%for row in data %}
         <tr onclick="window.location.assign('/api?isbn={{row[0]}}&key=NxHR0wNCivzIEefBextQ')">
           {%for n in row%} 
           <td>{{n}}</td>
         {%endfor%}
-        </tr> 
+        </li> 
         
        {%endfor%} 
-       
-      </tbody>
-    </table>
+     </ul>   
     </div>
 </div>
     </section>
