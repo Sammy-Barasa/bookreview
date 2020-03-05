@@ -1,0 +1,90 @@
+ {%extends "layout.html"%}
+
+{%block title%}User{%endblock%}
+
+{%block body%}
+<section class="section">
+<div class="container">
+<div class="row">
+<div class="col-sm-1 flex-column justify-content-centre">
+    <nav class="navbar">
+        <ul class="navbar-nav flex-item">
+          <li class="nav-item justify-content-center">
+            <a class="navbar-brand nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item flex-item justify-content-center">
+            <a class="nav-link navbar-brand" href="/bookpage">Books</a>
+          </li>
+        </ul>
+      </div>
+
+      
+          <div class="col-md-11 bg-gray">
+            <div class="row">
+             <h1> {{message}}</h1><br>
+              <form class="form-inline">
+                <input class="form-control mr-sm-4" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+           </section>
+
+<section class="section" id="books">
+  <div class="row">
+    <div class="col-md-8">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        
+        <th scope="col">ISBN</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Year</th>
+      </th>
+      <tbody>
+        {%for row in data %}
+        <tr onclick="window.location.assign('/api?isbn={{row[0]}}&key=NxHR0wNCivzIEefBextQ')">
+          {%for n in row%} 
+          <td>{{n}}</td>
+        {%endfor%}
+        </tr> 
+        
+       {%endfor%} 
+       
+      </tbody>
+    </table>
+    </div>
+</div>
+    </section>
+    <div class="row justify-content-center flex-shrink">
+    
+    <section class="section">
+      <div class="container" >
+        <div class="col-md-10 justify-content-centre">
+        <header class="section-header" position="centre">
+          <h5>Sponsered by</h5>
+          <hr>
+          <p class="lead">Join some of our partners who enable us to provide quality services</p>
+        </header>
+    
+        <div data-provide="slider" data-autoplay="true" data-slides-to-show="4" item="flex-shrink">
+          <div><img src="{{url_for('static', filename='/assets/images/bg-6.png')}}" />
+          <img src="{{url_for('static', filename='/assets/images/bg-7.jpg')}}" alt="partner 2">
+          <img src="{{url_for('static', filename='/assets/images/bg-8.png')}}" alt="partner 3">
+          <img src="{{url_for('static', filename='/assets/images/bg-9.jpg')}}" alt="partner 4">
+          <img src="{{url_for('static', filename='/assets/images/bg-10.png')}}" alt="partner 5">
+          <img src="{{url_for('static', filename='/assets/images/bg-11.png')}}" alt="partner 6">
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </section>
+
+</div>
+          
+
+
+{%endblock%}

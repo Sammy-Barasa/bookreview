@@ -1,0 +1,234 @@
+{%extends "layout.html"%}
+
+{%block title%}User{%endblock%}
+
+{%block body%}
+
+
+!-->
+<section id="basics" class="section ">
+  <div class="container">
+    <header class="section-header">
+      <img src="assets/images/bg-5.PNG" alt="" "justify-content-center mb-1">
+      <h6>logged in as user</h6>
+<h2 >Student details</h2>
+ </header>
+
+<div class="row   mb-2 justify-content-center">
+<input class="form control col-md-5 collectes-search-min text-center " type="text" id="datepicker"   placeholder="search" aria-label="search">
+
+</div>
+<br>
+        <div class="row ">
+          <div class="col-md-2 text-dark color-#0d0c0c " >
+            <ul class="nav nav-pills flex-column nav-justified" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active text-dark " data-toggle="tab" href="#tab-home-2">Home</a>
+              </li>
+              <br>
+              <li class="nav-item ">
+                <a class="nav-link text-dark" data-toggle="tab" href="#tab-profile-2">Student Results</a>
+              </li>
+
+              <br>
+              <li class="nav-item">
+                <a class="nav-link text-dark " data-toggle="tab" href="#tab-contact-2">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-9 bg-gray">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab-home-2">
+                <p class="te text-center"><b>High Rise International</b></p>
+                <p class="te text-center small-3"><b>Your Choice for excelence</b></p>
+                <br>
+                <img src="assets/images/bg-4.jpeg" alt=""max-width= "100%">
+
+
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Sponsered by</h2>
+      <hr>
+      <p class="lead">Join some of our partners who enable us to provide quality services</p>
+    </header>
+
+    <div data-provide="slider" data-autoplay="true" data-slides-to-show="4">
+      <div><img src="assets/images/bg-6.png" alt="partner 1"></div>
+      <div><img src="assets/images/bg-7.jpg" alt="partner 2"></div>
+      <div><img src="assets/images/bg-8.png" alt="partner 3"></div>
+      <div><img src="assets/images/bg-9.jpg" alt="partner 4"></div>
+      <div><img src="assets/images/bg-10.png" alt="partner 5"></div>
+      <div><img src="assets/images/bg-11.png" alt="partner 6"></div>
+    </div>
+
+  </div>
+</section>
+
+              </div>
+              <div class="tab-pane fade" id="tab-profile-2">
+                 Student Details
+              <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                  <th scope="col">No.</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Admission Number</th>
+                  <th scope="col">Cat 1</th>
+                  <th scope="col">Cat 2</th>
+                  <th scope="col">Final Exam</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Remarks</th>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <th  scope="row">1.</>
+                      <td>Justin</td>
+                      <td>Juma</td>
+                      <td>ENE212-0087/2017</td>
+                      <td>19</td>
+                      <td>25</td>
+                      <td>56</td>
+                      <td>78</td>
+                      <td>A</td>
+                      <td>Excelent</td>
+                  </tr>
+                  <tr>
+                    <th  scope="row">2.</>
+                      <td>Austine</td>
+                      <td>Kiptoo</td>
+                      <td>ENE212-0088/2017</td>
+                      <td>15</td>
+                      <td>22</td>
+                      <td>36</td>
+                      <td>55</td>
+                      <td>C</td>
+                      <td>Fair</td>
+                  </tr>
+                  <tr>
+                    <th  scope="row">3.</>
+                      <td>Meshack</td>
+                      <td>Ouma</td>
+                      <td>ENE212-0088/2017</td>
+                      <td>13</td>
+                      <td>20</td>
+                      <td>66</td>
+                      <td>83</td>
+                      <td>A</td>
+                      <td>Excelent</td>
+                  </tr>
+                  <tr>
+                    <th  scope="row">4.</>
+                      <td>Rolynne</td>
+                      <td>Mumo</td>
+                      <td>ENE212-0089/2017</td>
+                      <td>10</td>
+                      <td>21</td>
+                      <td>47</td>
+                      <td>63</td>
+                      <td>B</td>
+                      <td>Good</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+              </div>
+              <div class="tab-pane fade" id="tab-contact-2">
+
+<main class="main-content">
+
+
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| Contact form
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<section class="section">
+  <div class="container">
+
+    <form class="row gap-y" action="http://thetheme.io/thesaas/assets/php/sendmail.php" method="POST" data-form="mailer">
+      <div class="col-lg-7">
+        <h3>Contact Us</h3>
+        <br>
+
+        <div class="alert alert-success d-on-success">We received your message and will contact you back soon.</div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input class="form-control form-control-lg" type="text" name="name" placeholder="Name">
+          </div>
+
+          <div class="form-group col-md-6">
+            <input class="form-control form-control-lg" type="email" name="email" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control form-control-lg" rows="4" placeholder="Message" name="message"></textarea>
+        </div>
+
+        <button class="btn btn-lg btn-primary" type="submit">Send message</button>
+
+      </div>
+
+
+      <div class="col-lg-4 ml-auto text-center text-lg-left">
+        <hr class="d-lg-none">
+        <h3>Find Us</h3>
+        <br>
+        <p>2651 Main Street, Suit 124<br>Kiambu, P.O.Box 98101</p>
+        <p>+254 7 654 9870<br>+254 7 123 6548</p>
+        <p>highriseinternational@gmail.com</p>
+        <div class="fw-400">Follow Us</div>
+        <div class="social social-md social-inline">
+          <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          <a class="social-dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+</section>
+
+
+
+</main><!-- /.main-content -->
+
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+
+
+    <div class="col-lg-12">
+      <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+        <a class="nav-link" href="uikit/index.html">Elements</a>
+        <a class="nav-link" href="block/index.html">Blocks</a>
+        <a class="nav-link" href="about-1.html">About</a>
+        <a class="nav-link" href="blog/grid.html">Blog</a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</footer>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{%endblock%}
